@@ -1,0 +1,49 @@
+/* Section globale */
+.menu-section {
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-container {
+  width: 80%; /* Augmenté pour s'adapter à deux images */
+  margin: 0 auto;
+}
+
+/* Images du carousel */
+.c-img {
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contrôles du carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: invert(100%);
+  width: 30px;
+  height: 30px;
+}
+
+/* Points indicateurs */
+.carousel-indicators li {
+  background-color: #555;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+/* Ajustements pour deux images côte à côte */
+.carousel-item .row {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item .col-6 {
+  padding: 0 10px; /* Espace entre les images */
+}

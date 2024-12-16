@@ -1,0 +1,87 @@
+* {
+  background-color: unset; /* Supprime les styles de fond hérités */
+}
+
+.header {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    height: 600px; /* Hauteur du header */
+    width: 100%; /* Assure que le header occupe toute la largeur */
+}
+
+.header .overlay {
+    background: rgba(0, 0, 0, 0.2); /* Effet de superposition sombre */
+    position: absolute; /* Permet de superposer l'overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    position: absolute;
+    top: 500px; /* Change en fonction de l'endroit souhaité */
+    left: 40px; /* Distance depuis le bord droit */
+    display: flex;
+    gap: 40px;
+}
+
+.social-logo {
+    width: 80px; /* Taille des logos */
+    height: auto; /* Préserve les proportions */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Animation pour le survol */
+}
+
+/* Ajoute un effet de survol */
+.social-logo:hover {
+    transform: scale(1.4); /* Zoom léger sur le logo */
+}
+
+.navbar {
+    position: relative; /* Plus d'absolu par rapport au header */
+    background-color: #873F2B; /* Fond noir */
+    padding: 10px 20px; /* Ajouter du padding */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+}
+
+.navbar-nav {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-around; /* Espacement égal entre les liens */
+    width: 100%; /* Occupe toute la largeur disponible */
+    padding: 0; /* Supprime les marges internes */
+    margin: 0; /* Supprime les marges externes */
+    list-style: none; /* Supprime les puces des listes */
+}
+
+.navbar .nav-link {
+    color: white !important; /* Couleur des liens */
+    font-size: 1.5rem;
+    font-weight: bold; /* Texte en gras */
+    text-transform: uppercase; /* Tout en majuscules */
+}
+
+.navbar .nav-link:hover {
+    color: rgba(255, 255, 255, 0.356) !important; /* Changement de couleur au survol */
+}
+
+
+.container {
+  max-width: 100%; 
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #000;
+  color: black !important
+}
+
+/* Conteneur global */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: black !important
+
+} 

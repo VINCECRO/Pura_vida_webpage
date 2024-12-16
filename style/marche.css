@@ -1,0 +1,129 @@
+/* ================================================================= 
+/* =================================================================
+/**POUR LA PAGE D'ACCEUIL         */
+/* ================================================================= 
+/* ================================================================= */
+/* Section principale */
+
+/* Conteneur global */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: black !important
+  
+  } 
+
+.intro-section {
+    box-shadow: 0 0 0 100vmax;
+    background-color: #000 !important;
+    color : black !important;
+    align-items: left top
+}
+  
+
+/* Partie texte */
+.text-content {
+    text-align: start; /* Centre le texte horizontalement */
+    margin: 0 auto; /* Centre horizontalement le conteneur */
+    padding: 3rem 3rem; /* Ajoute un léger espace à l'intérieur */
+    max-width: 80%; /* Optionnel : limite la largeur pour éviter un texte trop étalé */
+    box-sizing: border-box;
+    color : white !important;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.location {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Partie image */
+.image-content img {
+  width: 100%; /* Conserve les proportions de l'image */
+  height: auto; /* Adapte la hauteur de l'image à celle du conteneur parent */
+  object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans déformation */
+  border-radius: 0px; /* Garde les coins arrondis */
+
+}
+
+/* Section globale */
+.section2 {
+  box-shadow: 0 0 0 100vmax;
+  align-items: left top;
+  background-color: #000; /* Fond noir */
+}
+
+
+/* Partie image */
+.section2 .image-content img {
+  width: 100%; /* Conserve les proportions de l'image */
+  height: auto; /* Adapte la hauteur de l'image à celle du conteneur parent */
+  object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans déformation */
+  border-radius: 0px; /* Garde les coins arrondis */
+}
+
+/* Partie texte */
+.section2 .text-content {
+  text-align: start; /* Centre le texte horizontalement */
+  margin: 0 auto; /* Centre horizontalement le conteneur */
+  padding: 3rem 3rem; /* Ajoute un léger espace à l'intérieur */
+  max-width: 80%; /* Optionnel : limite la largeur pour éviter un texte trop étalé */
+  box-sizing: border-box;
+  color : white !important;
+  font-style: italic; /* Italique */
+  font-family: 'Georgia', serif; /* Police élégante, modifiable selon votre préférence */
+}
+
+.section2 .text-content .title {
+  font-size: 3rem;
+}
+
+/* Description avec style personnalisé */
+.section2 .description2 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Section 3 - "Où nous trouver" */
+.section3 {
+    padding: 2rem;
+    background-color: #000000; /* Facultatif : ajoute une couleur de fond */
+  }
+  
+  /* Container pour le texte et la carte */
+  .content-MAP {
+    display: block;  /* Par défaut, les éléments sont affichés en bloc */
+    text-align: center;  /* Centre le texte */
+    padding-top: 100px;
+  }
+  
+  /* Titre */
+  .section3 .title {
+    font-size: 2rem; /* Ajuste la taille du titre */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;  /* Marge sous le titre pour espacer de la carte */
+  }
+  
+  /* Carte */
+  .google-map iframe {
+    width: 700px; /* Prend toute la largeur du conteneur */
+    height: 700px;  /* Vous pouvez ajuster la hauteur comme vous le souhaitez */
+    border-radius: 20px; /* Bordures arrondies pour l'iframe */
+    margin: 0 auto;  /* Centre la carte horizontalement */
+    display: block;  /* Assure que l'iframe est affichée en tant que bloc */
+  }

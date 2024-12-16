@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pura Vida</title>
+
+  <!-- Lien vers le CSS de Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lien vers le fichier CSS personnalisé -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header class="header" style="background-image: url('images/header_v2.jpg');">
+    <div class="overlay">
+      <div class="container-fluid text-center text-white">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/puravida_cafe_latino/" target="_blank">
+            <img src="images/Logo-instagram.png" alt="Instagram" class="social-logo">
+          </a>
+          
+          <a href="https://web.facebook.com/profile.php?id=100054648420278" target="_blank">
+            <img src="images/logo_facebook.png" alt="Facebook" class="social-logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Navbar séparée -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+        <a class="nav-link" href="{% url 'accueil' %}">Accueil</a>
+      </li>
+      <li class="nav-item {% if request.path == '/marches-artisanaux/' %}active{% endif %}">
+        <a class="nav-link" href="{% url 'marches_artisanaux' %}">Marchés artisanaux</a>
+      </li>
+      <li class="nav-item {% if request.path == '/concerts/' %}active{% endif %}">
+        <a class="nav-link" href="{% url 'concerts' %}">Concerts</a>
+      </li>
+      <li class="nav-item {% if request.path == '/depot-vente/' %}active{% endif %}">
+        <a class="nav-link" href="{% url 'depot_vente' %}">Dépot-vente</a>
+      </li>
+      <li class="nav-item {% if request.path == '/carte/' %}active{% endif %}">
+        <a class="nav-link" href="{% url 'carte' %}">Carte</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- ##########################################################################################################################################################################################################################################-->
+<!-- ##########################################################################################################################################################################################################################################-->
+<!-- ##########################################################################################################################################################################################################################################-->
+<!-- #####################################################################################################################-->
+<!-- #####################################################################################################################-->
+<!-- #####################################################################################################################-->
+<!-- Contenu de la page -->
+<div class="container">
+
+  <section class="intro-section">
+    <div class="content-container">
+      <div class="text-content">
+        <h2 class="title">UN LIEU UNIQUE</h2>
+        <p class="location">Au cœur de la haie-vive </p>
+        <p class="description">
+          Situé en plein cœur du centre-ville, ce lieu emblématique a été pensé pour offrir
+          une expérience unique. Avec une ambiance chaleureuse et un design moderne, il
+          attire autant les amateurs de moments intimes que ceux en quête de festivités.
+          Depuis son ouverture, il incarne le mariage parfait entre tradition et modernité.
+        </p>
+      </div>
+      <div class="image-content">
+        <img src="{% static 'images/lieux.jpg' %}" alt="Photo du lieu" />
+      </div>
+    </div>
+  </section>
+  
+  <section class="section2">
+    <div class="content-container">
+      <div class="image-content">
+        <img src="{% static 'images/photo_Youss.jpg' %}" alt="Photo du lieu" />
+      </div>
+      <div class="text-content">
+        <h2 class="title">Le mot de Youss</h2>
+        <p class="description2">
+          "Au début, j'étais un artiste passionné par la création de meubles. 
+          Chaque pièce que je sculptais était unique, le reflet de ma vision et de mon amour pour l’artisanat. 
+          Rapidement, mon atelier est devenu un lieu de rencontre. 
+          Les gens venaient pour découvrir mes créations, mais restaient souvent pour discuter,
+          et c’est là que j’ai commencé à leur offrir un café, simplement pour prolonger ces moments d’échange. 
+          De fil en aiguille, l’idée a germé : pourquoi ne pas créer un lieu où l’art, la convivialité et les discussions pourraient 
+          se mêler naturellement ?
+          C’est ainsi que j’ai décidé d’ouvrir un restaurant, mais pas un restaurant ordinaire.
+          Je voulais un endroit où l’artistique resterait au centre de tout : avec des marchés artisanaux 
+          pour mettre en avant les créateurs, des concerts pour nourrir l’âme, et un espace où chacun pourrait 
+          partager ses idées autour d’un bon repas. Aujourd’hui, ce lieu est l’expression de ce rêve, un endroit 
+          où l’art et la convivialité sont à l’honneur, chaque jour."
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section3">
+    <div class="content-MAP">
+      <div class="section3-text">
+        <h2 class="title">Où nous trouver :</h2>
+      </div>
+      <div class="google-map" style="width: 100%"><iframe width="700" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=700&amp;height=700&amp;hl=en&amp;q=pura%20vida%20caf%C3%A9%20cotonou+(pura%20vida)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe></div>
+    </div>
+  </section>
+</div>
+<!-- #####################################################################################################################-->
+<!-- #####################################################################################################################-->
+<!-- #####################################################################################################################-->
+ <!-- ##########################################################################################################################################################################################################################################-->
+<!-- ##########################################################################################################################################################################################################################################-->
+<!-- ##########################################################################################################################################################################################################################################-->
+
+
+  <!-- Lien vers les scripts JavaScript de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
