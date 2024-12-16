@@ -33,27 +33,27 @@
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5rem;
   text-transform: uppercase;
 }
 
 .location {
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   margin-bottom: 1.2rem;
 }
 
 .description {
-  font-size: 1.5rem;
+  font-size: 4rem;
   line-height: 1.6;
 }
 
 /* Partie image */
 .image-content img {
-  width: 100%; /* Conserve les proportions de l'image */
+  width: 200rem; /* Conserve les proportions de l'image */
   height: auto; /* Adapte la hauteur de l'image à celle du conteneur parent */
   object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans déformation */
   border-radius: 0px; /* Garde les coins arrondis */
@@ -70,7 +70,7 @@
 
 /* Partie image */
 .section2 .image-content img {
-  width: 800px; /* Conserve les proportions de l'image */
+  width: 250rem; /* Conserve les proportions de l'image */
   height: auto; /* Adapte la hauteur de l'image à celle du conteneur parent */
   object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans déformation */
   border-radius: 0px; /* Garde les coins arrondis */
@@ -89,12 +89,12 @@
 }
 
 .section2 .text-content .title {
-  font-size: 3rem;
+  font-size: 8rem;
 }
 
 /* Description avec style personnalisé */
 .section2 .description2 {
-  font-size: 1.5rem;
+  font-size: 4rem;
   line-height: 1.6;
 }
 
@@ -108,12 +108,12 @@
   .content-MAP {
     display: block;  /* Par défaut, les éléments sont affichés en bloc */
     text-align: center;  /* Centre le texte */
-    padding-top: 100px;
+    padding-top: 50rem;
   }
   
   /* Titre */
   .section3 .title {
-    font-size: 2rem; /* Ajuste la taille du titre */
+    font-size: 5rem; /* Ajuste la taille du titre */
     font-weight: bold;
     color: white;
     margin-bottom: 2rem;  /* Marge sous le titre pour espacer de la carte */
@@ -121,9 +121,9 @@
   
   /* Carte */
   .google-map iframe {
-    width: 700px; /* Prend toute la largeur du conteneur */
-    height: 700px;  /* Vous pouvez ajuster la hauteur comme vous le souhaitez */
-    border-radius: 20px; /* Bordures arrondies pour l'iframe */
+    width: 175rem; /* Prend toute la largeur du conteneur */
+    height: 175rem;  /* Vous pouvez ajuster la hauteur comme vous le souhaitez */
+    border-radius: 20rem; /* Bordures arrondies pour l'iframe */
     margin: 0 auto;  /* Centre la carte horizontalement */
     display: block;  /* Assure que l'iframe est affichée en tant que bloc */
   }
