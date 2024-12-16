@@ -26,34 +26,33 @@
 .text-content {
     text-align: start; /* Centre le texte horizontalement */
     margin: 0 auto; /* Centre horizontalement le conteneur */
-    padding: 3rem 3rem; /* Ajoute un léger espace à l'intérieur */
+    padding: 1vh 1vh; /* Ajoute un léger espace à l'intérieur */
     max-width: 80%; /* Optionnel : limite la largeur pour éviter un texte trop étalé */
     box-sizing: border-box;
     color : white !important;
 }
 
 .title {
-  font-size: 8rem;
+  font-size: 2vh;
   font-weight: bold;
-  margin-bottom: 5rem;
+  margin-bottom: 1.8vh;
   text-transform: uppercase;
 }
 
 .location {
-  font-size: 5rem;
+  font-size: 1.8vh;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1vh;
 }
 
 .description {
-  font-size: 4rem;
-  line-height: 1.6;
+  font-size: 1.5vh;
 }
 
 /* Partie image */
 .image-content img {
-  width: 200rem; /* Conserve les proportions de l'image */
+  width: 30vw; /* Conserve les proportions de l'image */
   height: auto; /* Adapte la hauteur de l'image à celle du conteneur parent */
   object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans déformation */
   border-radius: 0px; /* Garde les coins arrondis */
@@ -70,7 +69,7 @@
 
 /* Partie image */
 .section2 .image-content img {
-  width: 250rem; /* Conserve les proportions de l'image */
+  width: 60vw; /* Conserve les proportions de l'image */
   height: auto; /* Adapte la hauteur de l'image à celle du conteneur parent */
   object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans déformation */
   border-radius: 0px; /* Garde les coins arrondis */
@@ -80,7 +79,7 @@
 .section2 .text-content {
   text-align: start; /* Centre le texte horizontalement */
   margin: 0 auto; /* Centre horizontalement le conteneur */
-  padding: 3rem 3rem; /* Ajoute un léger espace à l'intérieur */
+  padding: 2vh 2vh; /* Ajoute un léger espace à l'intérieur */
   max-width: 80%; /* Optionnel : limite la largeur pour éviter un texte trop étalé */
   box-sizing: border-box;
   color : white !important;
@@ -89,18 +88,18 @@
 }
 
 .section2 .text-content .title {
-  font-size: 8rem;
+  font-size: 2vh;
 }
 
 /* Description avec style personnalisé */
 .section2 .description2 {
-  font-size: 4rem;
+  font-size: 1.5vh;
   line-height: 1.6;
 }
 
 /* Section 3 - "Où nous trouver" */
 .section3 {
-    padding: 2rem;
+    padding: 1.2vh;
     background-color: #000000; /* Facultatif : ajoute une couleur de fond */
   }
   
@@ -108,22 +107,22 @@
   .content-MAP {
     display: block;  /* Par défaut, les éléments sont affichés en bloc */
     text-align: center;  /* Centre le texte */
-    padding-top: 50rem;
+    padding-top: 6vh;
   }
   
   /* Titre */
   .section3 .title {
-    font-size: 5rem; /* Ajuste la taille du titre */
+    font-size: 1.5vh; /* Ajuste la taille du titre */
     font-weight: bold;
     color: white;
-    margin-bottom: 2rem;  /* Marge sous le titre pour espacer de la carte */
+    margin-bottom: 1vh;  /* Marge sous le titre pour espacer de la carte */
   }
   
   /* Carte */
   .google-map iframe {
-    width: 175rem; /* Prend toute la largeur du conteneur */
-    height: 175rem;  /* Vous pouvez ajuster la hauteur comme vous le souhaitez */
-    border-radius: 20rem; /* Bordures arrondies pour l'iframe */
+    width: 40vh; /* Prend toute la largeur du conteneur */
+    height: 40vh;  /* Vous pouvez ajuster la hauteur comme vous le souhaitez */
+    border-radius: 2vh; /* Bordures arrondies pour l'iframe */
     margin: 0 auto;  /* Centre la carte horizontalement */
     display: block;  /* Assure que l'iframe est affichée en tant que bloc */
   }

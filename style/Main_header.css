@@ -1,13 +1,12 @@
 * {
   background-color: unset; /* Supprime les styles de fond hérités */
 }
-
 .header {
     position: relative;
-    background-size: cover;
-    background-position: center center;
-    height: 130rem; /* Hauteur du header */
-    width: auto; /* Assure que le header occupe toute la largeur */
+    background-size: cover; /* Assure que l'image couvre tout le header */
+    background-position: center center; /* Centre l'image dans le header */
+    height: 50vh; /* Hauteur dynamique basée sur la taille de la fenêtre */
+    width: 100%; /* Occupe toute la largeur de l'écran */
 }
 
 .header .overlay {
@@ -24,14 +23,14 @@
 
 .social-icons {
     position: absolute;
-    top: 100rem; /* Change en fonction de l'endroit souhaité */
-    left: 10rem; /* Distance depuis le bord droit */
+    top: 37vh !important; /* Change en fonction de l'endroit souhaité */
+    left: 2vw; /* Distance depuis le bord droit */
     display: flex;
-    gap: 10rem;
+    gap: 2vw;
 }
 
 .social-logo {
-    width: 20rem; /* Taille des logos */
+    width: 8vh; /* Taille des logos */
     height: auto; /* Préserve les proportions */
     transition: transform 0.3s ease, filter 0.3s ease; /* Animation pour le survol */
 }
@@ -44,14 +43,14 @@
 .navbar {
     position: relative; /* Plus d'absolu par rapport au header */
     background-color: #873F2B; /* Fond noir */
-    padding: 2rem 5rem; /* Ajouter du padding */
+    padding: 1vh 5vh; /* Ajouter du padding */
     z-index: 1000; /* Toujours au-dessus des autres éléments */
 }
 
 .navbar-nav {
     display: flex; /* Utilisation de Flexbox */
     justify-content: space-around; /* Espacement égal entre les liens */
-    width: 100%; /* Occupe toute la largeur disponible */
+    width: 100vw; /* Occupe toute la largeur disponible */
     padding: 0; /* Supprime les marges internes */
     margin: 0; /* Supprime les marges externes */
     list-style: none; /* Supprime les puces des listes */
@@ -59,7 +58,7 @@
 
 .navbar .nav-link {
     color: white !important; /* Couleur des liens */
-    font-size: 8rem;
+    font-size: 2.5vh;
     font-weight: bold; /* Texte en gras */
     text-transform: uppercase; /* Tout en majuscules */
 }
@@ -70,7 +69,7 @@
 
 
 .container {
-  max-width: 100%; 
+  max-width: 100vw; 
   padding-left: 0;
   padding-right: 0;
   background-color: #000;
