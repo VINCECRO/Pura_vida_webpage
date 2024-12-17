@@ -3,27 +3,34 @@
 }
 .header {
     position: relative;
-    background-size: cover; /* Assure que l'image couvre tout le header */
-    background-position: center center; /* Centre l'image dans le header */
-    height: 50vh; /* Hauteur dynamique basée sur la taille de la fenêtre */
-    width: 100%; /* Occupe toute la largeur de l'écran */
+    width: 100%; /* Occupe toute la largeur de la page */
+    text-align: center; /* Centre le contenu si nécessaire */
 }
 
+/* Image qui ajuste la taille du conteneur */
+.header-image {
+    width: 100%; /* L'image s'adapte à la largeur de son conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    display: block; /* Supprime les marges blanches indésirables */
+}
+
+/* Overlay pour l'effet sombre */
 .header .overlay {
     background: rgba(0, 0, 0, 0.2); /* Effet de superposition sombre */
-    position: absolute; /* Permet de superposer l'overlay */
+    position: absolute; /* Position absolue pour superposer */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
+    display: flex; /* Alignement central du contenu */
     justify-content: center;
     align-items: center;
+    pointer-events: none; /* Rend l'overlay non cliquable */
 }
 
 .social-icons {
     position: absolute;
-    top: 37vh !important; /* Change en fonction de l'endroit souhaité */
+    bottom: 1.3vh !important; /* Change en fonction de l'endroit souhaité */
     left: 2vw; /* Distance depuis le bord droit */
     display: flex;
     gap: 2vw;
@@ -40,6 +47,30 @@
     transform: scale(1.4); /* Zoom léger sur le logo */
 }
 
+/* POUR LES PETITS ECRAN */
+@media (max-width: 700px) {
+    .social-icons {
+        position: absolute;
+        bottom: 1.3vh !important; /* Change en fonction de l'endroit souhaité */
+        left: 2vw; /* Distance depuis le bord droit */
+        display: flex;
+        gap: 2vw;
+    }
+    
+    .social-logo {
+        width: 4vh; /* Taille des logos */
+        height: auto; /* Préserve les proportions */
+        transition: transform 0.3s ease, filter 0.3s ease; /* Animation pour le survol */
+    }
+    
+    /* Ajoute un effet de survol */
+    .social-logo:hover {
+        transform: scale(1.4); /* Zoom léger sur le logo */
+    }
+}
+
+
+
 .navbar {
     position: relative; /* Plus d'absolu par rapport au header */
     background-color: #873F2B; /* Fond noir */
@@ -50,7 +81,7 @@
 .navbar-nav {
     display: flex; /* Utilisation de Flexbox */
     justify-content: space-around; /* Espacement égal entre les liens */
-    width: 100vw; /* Occupe toute la largeur disponible */
+    width: 100%; /* Occupe toute la largeur disponible */
     padding: 0; /* Supprime les marges internes */
     margin: 0; /* Supprime les marges externes */
     list-style: none; /* Supprime les puces des listes */

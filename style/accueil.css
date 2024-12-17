@@ -1,10 +1,15 @@
-/* ================================================================= 
-/* =================================================================
-/**POUR LA PAGE D'ACCEUIL         */
-/* ================================================================= 
-/* ================================================================= */
+/* =================================================================================== 
+/* ===================================================================================
+/**POUR LA PAGE D'ACCEUIL                           */
+/* =================================================================================== 
+/* =================================================================================== */
 /* Section principale */
 
+/*  ===================================================================*/ 
+/*  ===================================================================*/ 
+/*                MISE EN PAGE CLASSIQUE POUR PC
+/*  ===================================================================*/ 
+/*  ===================================================================*/ 
 /* Conteneur global */
 .content-container {
     display: flex;
@@ -14,7 +19,7 @@
   
   } 
 
-.intro-section {
+  .intro-section {
     box-shadow: 0 0 0 100vmax;
     background-color: #000 !important;
     color : black !important;
@@ -59,6 +64,27 @@
 
 }
 
+
+@media (max-width: 768px) {
+  .content-container {
+    display: block !important;
+    justify-content: space-between;
+    background-color: #000;
+    color: black !important
+  } 
+
+  .image-content img {
+    float: right; /* Supprime le flottement sur mobile */
+    width: 30vw; /* Image en pleine largeur */
+    margin: 0 0 2vh 0; /* Espacement en bas seulement */
+  }
+
+  .text-content {
+      text-align: center; /* Centre le texte */
+  }
+
+}
+
 /* Section globale */
 .section2 {
   box-shadow: 0 0 0 100vmax;
@@ -73,6 +99,20 @@
   height: auto; /* Adapte la hauteur de l'image à celle du conteneur parent */
   object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans déformation */
   border-radius: 0px; /* Garde les coins arrondis */
+}
+
+
+@media (max-width: 768px) {
+
+    /* Partie image */
+    .section2 .image-content img {
+    float: left !important;
+    width: 60vw; /* Conserve les proportions de l'image */
+    height: auto; /* Adapte la hauteur de l'image à celle du conteneur parent */
+    object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans déformation */
+    border-radius: 0px; /* Garde les coins arrondis */
+
+  }
 }
 
 /* Partie texte */
