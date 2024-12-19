@@ -123,6 +123,7 @@
 
 
 .container {
+  flex: 1; /* Permet au contenu de s'étendre pour occuper l'espace restant */
   max-width: 100vw; 
   padding-left: 0;
   padding-right: 0;
@@ -138,3 +139,11 @@
   color: black !important
 
 } 
+
+
+body {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Empile les enfants verticalement */
+    min-height: 100vh; /* Hauteur minimum = hauteur de l'écran */
+    margin: 0; /* Supprime les marges par défaut */
+}
