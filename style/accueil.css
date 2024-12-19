@@ -72,6 +72,13 @@
   .content1-text .description {
     font-size: 1.5vh;
   }
+
+  .content1-image {
+    float: right; /* Place l'image dans le coin supérieur droit */
+    width: 50vw; /* Taille de l'image (30% de la largeur) */
+    height: auto; /* Conserve les proportions de l'image */
+    margin: 0 0 0vh 2vw; /* Espacement autour de l'image (droite et bas) */
+  }
 }
 
 
