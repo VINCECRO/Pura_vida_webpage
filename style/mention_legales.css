@@ -1,0 +1,65 @@
+/* =================================================================================== 
+/* ===================================================================================
+/**POUR LES MENTIONS LEGALES                          */
+/* =================================================================================== 
+/* =================================================================================== */
+
+
+.legal-container {
+    background-color: #000; /* Fond noir */
+    color: white; /* Texte en blanc */
+    padding: 3vh 5vw; /* Espacement interne pour aérer la section */
+    line-height: 1.6; /* Hauteur de ligne pour lisibilité */
+    font-family: 'Arial', sans-serif; /* Police élégante et moderne */
+    text-align: justify; /* Justification du texte */
+}
+
+/* Titres principaux */
+.legal-container .title {
+    font-size: 4vh; /* Taille similaire à vos autres titres */
+    font-weight: bold;
+    text-transform: uppercase; /* Majuscules */
+    margin-bottom: 2vh; /* Espacement sous le titre */
+    color: #00bcd4; /* Accent de couleur pour différencier les titres */
+}
+
+/* Sous-titres */
+.legal-container h2 {
+    font-size: 3vh; /* Taille des sous-titres */
+    font-weight: bold;
+    margin-bottom: 1.5vh; /* Espacement sous les sous-titres */
+    color: #ffffff; /* Couleur blanche pour rester lisible */
+    border-bottom: 1px solid #444; /* Ligne sous les sous-titres */
+    padding-bottom: 0.5vh; /* Espacement pour mieux aérer */
+}
+
+/* Paragraphes */
+.legal-container p {
+    font-size: 2vh; /* Taille de la description */
+    margin-bottom: 2vh; /* Espacement entre les paragraphes */
+}
+
+/* Liens */
+.legal-container a {
+    color: #00bcd4; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.legal-container a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .legal-container .title {
+        font-size: 3vh; /* Réduction de la taille des titres principaux */
+    }
+
+    .legal-container h2 {
+        font-size: 2.5vh; /* Taille ajustée pour petits écrans */
+    }
+
+    .legal-container p {
+        font-size: 1.8vh; /* Taille des paragraphes réduite */
+    }
+}

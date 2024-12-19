@@ -1,0 +1,21 @@
+.site-footer {
+    background-color: #000; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    padding: 1rem; /* Espacement autour du contenu */
+    font-size: 0.9rem; /* Taille du texte */
+    border-top: 1px solid #444; /* Ligne de séparation au-dessus */
+}
+
+.site-footer p {
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.footer-link {
+    color: #00bcd4; /* Couleur du lien */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}

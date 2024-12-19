@@ -82,6 +82,7 @@
 .content2-container {
   background-color: #000; /* Fond noir */
   color: white; /* Texte en blanc */
+  padding-bottom: 4vh;
 }
 
 /* Conteneur texte + image */
@@ -142,7 +143,7 @@
 
 /* Section 3 - "Où nous trouver" */
 .section3 {
-    padding: 0vh;
+    padding: 0vh 0vw 5vh 0vw;
     background-color: #000000; /* Facultatif : ajoute une couleur de fond */
   }
   

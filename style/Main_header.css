@@ -48,7 +48,7 @@
 }
 
 /* POUR LES PETITS ECRAN */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .social-icons {
         position: absolute;
         bottom: 1.3vh !important; /* Change en fonction de l'endroit souhaité */
@@ -58,7 +58,30 @@
     }
     
     .social-logo {
-        width: 4vh; /* Taille des logos */
+        width: 5vh; /* Taille des logos */
+        height: auto; /* Préserve les proportions */
+        transition: transform 0.3s ease, filter 0.3s ease; /* Animation pour le survol */
+    }
+    
+    /* Ajoute un effet de survol */
+    .social-logo:hover {
+        transform: scale(1.4); /* Zoom léger sur le logo */
+    }
+}
+
+
+/* POUR LES PETITS ECRAN */
+@media (max-width: 600px) {
+    .social-icons {
+        position: absolute;
+        bottom: 1.3vh !important; /* Change en fonction de l'endroit souhaité */
+        left: 2vw; /* Distance depuis le bord droit */
+        display: flex;
+        gap: 2vw;
+    }
+    
+    .social-logo {
+        width: 3vh; /* Taille des logos */
         height: auto; /* Préserve les proportions */
         transition: transform 0.3s ease, filter 0.3s ease; /* Animation pour le survol */
     }
