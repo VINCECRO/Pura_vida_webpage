@@ -5,6 +5,7 @@
     position: relative;
     width: 100%; /* Occupe toute la largeur de la page */
     text-align: center; /* Centre le contenu si nécessaire */
+    z-index: 1;
 }
 
 /* Image qui ajuste la taille du conteneur */
@@ -34,17 +35,20 @@
     left: 2vw; /* Distance depuis le bord droit */
     display: flex;
     gap: 2vw;
+    z-index: 10;
+    pointer-events: auto;
 }
 
 .social-logo {
     width: 8vh; /* Taille des logos */
     height: auto; /* Préserve les proportions */
     transition: transform 0.3s ease, filter 0.3s ease; /* Animation pour le survol */
+    z-index: 10;
 }
 
 /* Ajoute un effet de survol */
 .social-logo:hover {
-    transform: scale(1.4); /* Zoom léger sur le logo */
+    transform: scale(1.2); /* Zoom léger sur le logo */
 }
 
 /* POUR LES PETITS ECRAN */
@@ -55,17 +59,20 @@
         left: 2vw; /* Distance depuis le bord droit */
         display: flex;
         gap: 2vw;
+        z-index: 10;
+        pointer-events: auto;
     }
     
     .social-logo {
         width: 5vh; /* Taille des logos */
         height: auto; /* Préserve les proportions */
         transition: transform 0.3s ease, filter 0.3s ease; /* Animation pour le survol */
+        z-index: 10;
     }
     
     /* Ajoute un effet de survol */
     .social-logo:hover {
-        transform: scale(1.4); /* Zoom léger sur le logo */
+        transform: scale(1.2); /* Zoom léger sur le logo */
     }
 }
 
@@ -78,17 +85,20 @@
         left: 2vw; /* Distance depuis le bord droit */
         display: flex;
         gap: 2vw;
+        z-index: 10;
+        pointer-events: auto;
     }
     
     .social-logo {
         width: 3vh; /* Taille des logos */
         height: auto; /* Préserve les proportions */
         transition: transform 0.3s ease, filter 0.3s ease; /* Animation pour le survol */
+        z-index: 10;
     }
     
     /* Ajoute un effet de survol */
     .social-logo:hover {
-        transform: scale(1.4); /* Zoom léger sur le logo */
+        transform: scale(1.2); /* Zoom léger sur le logo */
     }
 }
 
